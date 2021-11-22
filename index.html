@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;background-color: skyblue;">Xiaojun Wei</title>
-<style>
-    img{
-    width: 300px;
-    height: 300px;
-    margin-left: 40px;
-}
-ul {
-list-style-type: none;
-}
-div {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: x-large;
-}
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-}
-</style>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 1fr 1fr 20px;
+            
+            gap: 10px;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container div{
+            padding: 10px;
+        }
+        .header {
+            grid-column: 1 / span 4;
+            font-size: 40px;
+        }
+        .photo{
+            grid-row: 2 /span 1;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            margin-left: 20px;
+            border-color: black;
+        }
+        .contactme{
+            grid-row: 3/ span 1;
+        }
+        .aboutme{
+            grid-column: 2 /span 2;
+        }
+        .education{
+            grid-column: 2 /span 2;
+        }
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: xx-large;
+            color: burlywood;
+        }
+        p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+        }
+    </style>
 </head>
-    <header>Xiaojun Wei</header>
-    <main>
-        <div>About me</div>
-<p>
-I am a linguistic student who works on <strong>syntax-semantics interface</strong>
-and <strong>information structure</strong>.
-</p>
-<div>Education</div>
-<table style="font-family:Arial, Helvetica, sans-serif ;
-font-size: larger;width: fit-content;">
-    <tr>
-        <td>2020-2021</td>
-        <td>MSc by research in Linguistics</td>
-        <td>University of Edinburgh</td>
-    </tr>
-    <tr>
-        <td>2019-2020</td>
-        <td>MA in English Language and Linguistics</td>
-        <td>National University of Singapore</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>2015-2019</td>
-        <td>BA in Finance</td>
-        <td>Jiangxi University of Finance and Economics</td>
-    </tr>
-    </table>
 <body>
-    </main>
-    <section></section>
+    <div class="container">
+        <div class="header" style="background-color:rgb(179, 212, 224);
+        text-align: center;">Xiaojun Wei</div>
 
-    <aside>
-        <img src="Xiaojun_cartoon.webp" alt="my photo">
-        <h2 style="font-family: 'Courier New', Courier, monospace
-        ;font-size: x-large;">Contact me</h2> 
-        <p>Email: s1861793@ed.ac.uk</p>
-    </aside>
+        <div class="photo">
+            <img src="Xiaojun_cartoon.webp" alt="my photo">
+            </div>
+        <div class="contactme">
+            <h2>Contact me</h2>
+            <p>Email: s1861793@ed.ac.uk</p>
+            <p>CV: <a href="http://linkedin.com/in/xiaojun-wei" download="">Linkedin</a>
+            </p>
+        </div>
+        <div class="aboutme">
+            <h2>About me</h2>
+            <p>I also go by Jessie, and I am Chinese.</p>
+            <p>I am a linguistic student who works on <br>
+                <u>syntax-semantics interface</u>
+                and <u>information structure</u>.</p>
+            <p>I play harmonica sometimes.</p>
+        </div>
+        <div class="education">
+            <table style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;">
+            <h2>Education</h2>
+                <tr>
+                    <td>2020-2021</td>
+                    <td>MSc by research in Linguistics</td>
+                    <td>University of Edinburgh</td>
+                </tr>
+                <tr>
+                    <td>2019-2020</td>
+                    <td>MA in English Language and Linguistics</td>
+                    <td>National University of Singapore</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2015-2019</td>
+                    <td>BA in Finance</td>
+                    <td>Jiangxi University of Finance and Economics</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer style="text-align: center;">
+        &copy; 2021 Xiaojun Wei
+    </footer>
 </body>
-
 </html>
