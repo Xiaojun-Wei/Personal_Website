@@ -35,43 +35,56 @@ p {
     height: 100vh;
 
     display: grids;
-    grid-template-columns: repeat(3,1fr);
-    grid: 100px 1fr 100px;
 
+    grid-template: 100px 1fr 1fr 100px /repeat(3,1fr);
     gap: 20px;
 }
+.header{
+    grid-column-start: 1 / span 3;
+    grid-column-end: 4;
+}
+.photo{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column: 2;
+}
+.Aboutme{
 
+}
+.Footer{
+    grid-template-columns: 1 / 3 spans;
+    text-align: center;
+}
 </style>
 </head>
 
 <body>    
     <div class="container">
         <div class="header">Xiaojun Wei</div>
-    </div>
+            <p>Email: s1861793@ed.ac.uk</p>
+            <p>CV: <a href="http://linkedin.com/in/xiaojun-wei" download="">Linkedin</a>
+            </p>
+        <div class="photo">photo</div>
 
-    <div>About me</div>
-        <p>
-        I also go by Jessie, and I am Chinese.<br>
+        <div class="about me">About me </div>
+        <p>I also go by Jessie, and I am Chinese.<br>
         I am a linguistic student who works on syntax-semantics interface</b>
         and information structure.<br>
         I play harmonica sometimes.
         </p>
-    <div>Education</div>
-        <p>
-            2020-2021 MSc by research in Linguistics
-                        <em>University of Edinburgh</em> <br>
-            2019-2020 MA in English Language and Linguistics
-                        <em>National University of Singapore</em> <br>
-            2015-2019 BA in Finance
-                        <em>Jiangxi University of Finance and Economics</em>
-        </p>
-    <div>Contact me</div> 
-        <p>Email: s1861793@ed.ac.uk</p>
-        <p>CV: <a href="http://linkedin.com/in/xiaojun-wei" download="">Linkedin</a>
-        </p>
-    <footer style="text-align: center;">
+        <div class="education">Education </div>
+            <p>
+                2020-2021 MSc by research in Linguistics
+                            <em>University of Edinburgh</em> <br>
+                2019-2020 MA in English Language and Linguistics
+                            <em>National University of Singapore</em> <br>
+                2015-2019 BA in Finance
+                            <em>Jiangxi University of Finance and Economics</em>
+            </p>
+        <div class="footer">Footer</div>
         &copy; 2021 Xiaojun Wei
-    </footer>
+    </div>
 </body>
 
 </html>
